@@ -1,6 +1,7 @@
 from googleapiclient import discovery
+import json 
 
-# Step 1: Set up a Perspective API key
+# Step 1: Perspective API key
 API_KEY = 'AIzaSyB2hrfSy_xmjogKmhGchRKnbM5tt9ZiUac'
 
 client = discovery.build(
@@ -10,12 +11,6 @@ client = discovery.build(
   discoveryServiceUrl="https://commentanalyzer.googleapis.com/$discovery/rest?version=v1alpha1",
   static_discovery=False,
 )
-
-# Step 2: Formulate Hypotheses
-# Hypotheses:
-# 1. Perspective will make more mistakes on shorter or more informal content.
-# 2. Perspective will be less likely to mark anti-male content as toxic.
-# 3. Perspective will fail if we replace common swear words with less common obscenities.
 
 # Step 3: Design and Perform Tests
 test_comments = [
