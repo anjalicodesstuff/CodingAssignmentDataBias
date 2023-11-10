@@ -3,9 +3,12 @@ Coding Assignment: Data Bias, I310D
 
 
 Step 3: Testing
-Perspective will make more mistakes on shorter or more informal pieces of content (like tweets).
-Perspective will be less likely to mark anti-male content as toxic when compared to anti-female content.
-Perspective will fail if we replace the most common swear words with less common obscenities.
+
+Below are a few of my hypotheses: 
+
+The Perspective API will detect toxicity more accurately in shorter statements.
+The Perspective API will be less likely to find toxicity in anti-male comments over anti-female comments.
+The Perspective API will find comments with curse words more toxic. 
 
 Step 4: Results & Analysis
 
